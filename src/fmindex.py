@@ -1,3 +1,7 @@
+from checkpoints import Checkpoints
+from bw import bwt
+from sa import suffix_array_basic, suffix_array_fast
+
 class FMIndex:
     def cut_suffix_array(self, full_sa, sa_step):
         """Sizes down suffix array taking every sa_step-th element, the rest are removed"""
